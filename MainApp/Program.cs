@@ -6,11 +6,12 @@ Random random = new();
 
 Console.WriteLine("Skriv in saker du vill ha gjort och sedan slumpar jag! (För avsluta, skriv: Stopp)\n");
 
+
 while (true)
 {
     string? innerinput = Console.ReadLine();
 
-    if (innerinput == "stopp" || innerinput == null)
+    if (innerinput?.ToLower() == "stopp" || innerinput?.ToLower() == null)
     {
         Console.Clear();
         break;
